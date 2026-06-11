@@ -112,6 +112,7 @@ body {
 	line-height: 1.55;
 	-webkit-font-smoothing: antialiased;
 	letter-spacing: -0.003em;
+	overflow-x: hidden;
 }
 h1,
 h2,
@@ -1938,8 +1939,7 @@ textarea {
 	}
 }
 @media (max-width: 720px) {
-	.nav-links,
-	.nav-login {
+	.nav-links {
 		display: none;
 	}
 	.nav-inner {
@@ -1947,8 +1947,20 @@ textarea {
 		gap: 12px;
 		padding: 0 16px;
 	}
-	.nav-avatar {
-		display: none;
+	.nav-search {
+		min-width: 0;
+	}
+	.nav-search input {
+		min-width: 0;
+	}
+	.nav-theme {
+		flex-shrink: 0;
+	}
+	.nav-login {
+		padding: 0 12px;
+		height: 36px;
+		font-size: 13px;
+		flex-shrink: 0;
 	}
 	.page {
 		padding: 0 16px 100px;
@@ -1997,7 +2009,7 @@ textarea {
 	}
 	.bottom-nav {
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		position: fixed;
 		left: 0;
 		right: 0;

@@ -7,9 +7,10 @@
 	}
 	const { user, favCount }: Props = $props();
 
-	const isHome = $derived($page.url.pathname === '/');
-	const isFavs = $derived($page.url.pathname === '/favorites');
-	const isProfile = $derived($page.url.pathname === '/profile' || $page.url.pathname === '/auth');
+	const path = $derived($page.url.pathname as string);
+	const isHome = $derived(path === '/');
+	const isFavs = $derived(path === '/favorites');
+	const isProfile = $derived(path === '/profile' || path === '/auth');
 </script>
 
 <nav class="bottom-nav">

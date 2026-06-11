@@ -11,9 +11,10 @@
 	}
 	const { user, favCount, query, dark, onQueryChange, onToggleTheme }: Props = $props();
 
-	const isHome = $derived($page.url.pathname === '/');
-	const isFavs = $derived($page.url.pathname === '/favorites');
-	const isProfile = $derived($page.url.pathname === '/profile');
+	const path = $derived($page.url.pathname as string);
+	const isHome = $derived(path === '/');
+	const isFavs = $derived(path === '/favorites');
+	const isProfile = $derived(path === '/profile');
 </script>
 
 <header class="nav">

@@ -1943,11 +1943,14 @@ textarea {
 		display: none;
 	}
 	.nav-inner {
-		height: 62px;
-		gap: 12px;
-		padding: 0 16px;
+		height: auto;
+		flex-wrap: wrap;
+		padding: 10px 16px;
+		gap: 8px;
 	}
 	.nav-search {
+		order: 10;
+		flex: 0 0 100%;
 		min-width: 0;
 	}
 	.nav-search input {
@@ -1955,6 +1958,7 @@ textarea {
 	}
 	.nav-theme {
 		flex-shrink: 0;
+		margin-left: auto;
 	}
 	.nav-login {
 		padding: 0 12px;

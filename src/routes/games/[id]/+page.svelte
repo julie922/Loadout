@@ -100,12 +100,6 @@
 							Add to favorites
 						{/if}
 					</button>
-					<button class="btn btn-outline btn-lg">
-						<svg viewBox="0 0 24 24" width="18" height="18"
-							><path d="M8 5v14l11-7L8 5Z" fill="currentColor" /></svg
-						>
-						Watch trailer
-					</button>
 				</div>
 			</div>
 		</div>
